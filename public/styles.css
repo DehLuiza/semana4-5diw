@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #000000;
+  color: #098541;
+}
+
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d1b45;
+  color: #2ab108;
+  padding: 30px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.busca input {
+  padding: 5px;
+  width: 250px;
+}
+
+.busca button {
+  padding: 5px 10px;
+}
+
+.acoes button {
+  margin-left: 10px;
+  background: #efecf3;
+  border: none;
+  color: #070707;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 200px;
+  background: #070707;
+  padding: 15px;
+  height: calc(100vh - 60px);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: dotted;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 20px;
+}
+
+.destaque img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  color: #efecf3;
+  background: #2d1b45;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #128141;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.rodape {
+  background: #2d1b45;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .busca {
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .busca input {
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .acoes {
+    display: none; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sidebar li {
+    margin: 0 5px;
+  }
+
+  .conteudo {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center; 
+  }
+}
